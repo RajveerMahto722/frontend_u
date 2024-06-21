@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transections</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .box {
+        height: 400px;
+        width: 400px;
+        background-color: red;
+        /* transition-property: background-color,height,width;
+            transition-duration: 2s; */
+        margin: 5px;
+        /* transition: all 1s ease-in; */
+        overflow: hidden;
+      }
+
+      .inner-box {
+        height: 50%;
+        width: 100%;
+        background-color: yellow;
+        position: relative;
+        top: 400px;
+        transition: all 0.8s ease-in-out;
+      }
+
+      .box:hover .inner-box {
+        /* background-color: yellow;
+            cursor:pointer;
+            height: 800px;
+            width: 800px; */
+        /* transform: rotate(-90deg);
+            transform: scale(1.5);
+            transform: skewY(45deg); */
+        /* transform: translateY(500px); */
+        transform: translateY(-100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inner-box"></div>
+    </div>
+    <!-- <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div> -->
+  </body>
+</html>
