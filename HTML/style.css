@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+
+    /* height: 100vh; */
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box{
+
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+#box2{
+
+    flex-grow: 2;
+}
